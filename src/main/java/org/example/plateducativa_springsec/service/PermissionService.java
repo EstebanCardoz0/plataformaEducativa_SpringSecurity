@@ -11,6 +11,7 @@ import java.util.Optional;
 @Service
 public class PermissionService implements IPermissionService {
 
+    @Autowired
     private IPermissionRepository permissionRepository;
 
     @Override

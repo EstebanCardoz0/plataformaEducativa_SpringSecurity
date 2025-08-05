@@ -40,7 +40,8 @@ public class RoleController {
     }
 
     @PostMapping
-    @PreAuthorize("hasRole('ADMIN') and hasPermission('CREATE')")
+//    @PreAuthorize("hasRole('ADMIN') and hasPermission('CREATE')")
+    @PreAuthorize("hasRole('ADMIN') ")
     public ResponseEntity<Role> createRole(@RequestBody Role role) {
 
         Set<Permission> permi = new HashSet<>();
